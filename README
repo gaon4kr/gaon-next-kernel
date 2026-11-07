@@ -24,7 +24,7 @@ Xiaomi Redmi 6	cereus
 
 📥 Installation
 [Redmi 6 should use ONLY MIUI 10.4.4.0 -> 11.0.4.0 version before flashing custom recovery]
-Download the latest kernel release.
+Download your desired kernel version.
 Make sure you have a stable custom recovery.
 Create a backup of your current boot image, and vendor.
 Flash ALPS 0.4 64bit vendor -> kernel ZIP or image using the method I put in the release description.
