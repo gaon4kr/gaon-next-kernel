@@ -44,15 +44,9 @@ The developer is NOT responsible for bricked devices, data loss, or hardware dam
 Linux Kernel Developers
 Xiaomi / MediaTek for the device platform
 Open-source Android kernel community
-Everyone who contributed to testing and development
+Etc.
 
 
 📜 License
 
-This project follows the license of its upstream Linux kernel sources and applicable modifications. See the LICENSE file for details.
-
-<p align="center">
-<b>GAON-NEXT-KERNEL</b><br>
-Made for Redmi 6 (Cereus) ❤️<br>
-<i>Push beyond stock.</i>
-</p>
+See the LICENSE file for details.
