@@ -75,7 +75,7 @@ static struct page *follow_page_pte(struct vm_area_struct *vma,
 {
 	struct mm_struct *mm = vma->vm_mm;
 	struct dev_pagemap *pgmap = NULL;
-	struct page *page;
+	struct page *page = NULL;
 	spinlock_t *ptl;
 	pte_t *ptep, pte;
 
@@ -232,7 +232,7 @@ struct page *follow_page_mask(struct vm_area_struct *vma,
 	pud_t *pud;
 	pmd_t *pmd;
 	spinlock_t *ptl;
-	struct page *page;
+	struct page *page = NULL;
 	struct mm_struct *mm = vma->vm_mm;
 
 	*page_mask = 0;
@@ -556,7 +556,7 @@ static long __get_user_pages(struct task_struct *tsk, struct mm_struct *mm,
 		gup_flags |= FOLL_NUMA;
 
 	do {
-		struct page *page;
+		struct page *page = NULL;
 		unsigned int foll_flags = gup_flags;
 		unsigned int page_increm;
 
@@ -1194,7 +1194,7 @@ int __mm_populate(unsigned long start, unsigned long len, int ignore_errors)
 struct page *get_dump_page(unsigned long addr)
 {
 	struct vm_area_struct *vma;
-	struct page *page;
+	struct page *page = NULL;
 
 	if (__get_user_pages(current, current->mm, addr, 1,
 			     FOLL_FORCE | FOLL_DUMP | FOLL_GET, &page, &vma,
